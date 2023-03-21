@@ -167,9 +167,15 @@ class ProtobufMessageConverter {
             deviceId: String,
             services: RxBleDeviceServices
     ): pb.DiscoverServicesInfo {
+        val allServices = mutableListOf<pb.DiscoveredService>()
+        services.bluetoothGattServices.forEach {
+            allServices.add(fromBluetoothGattService(it))
+            allServices.addAll(it.includedServices.map { fromBluetoothGattService(it) })
+        }
+
         return pb.DiscoverServicesInfo.newBuilder()
                 .setDeviceId(deviceId)
-                .addAllServices(services.bluetoothGattServices.map { fromBluetoothGattService(it) })
+                .addAllServices(allServices)
                 .build()
     }
 
