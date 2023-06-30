@@ -382,9 +382,11 @@ packages:
   reactive_ble_platform_interface:
     dependency: "direct main"
     description:
-      path: "../reactive_ble_platform_interface"
-      relative: true
-    source: path
+      path: "packages/reactive_ble_platform_interface"
+      ref: clear-gatt-cache
+      resolved-ref: e99115340dde6975e02ac6642e869284f2cd83ea
+      url: "https://github.com/Harborn-digital/flutter_reactive_ble.git"
+    source: git
     version: "5.0.3"
   shelf:
     dependency: transitive
