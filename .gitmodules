@@ -1,0 +1,3 @@
+[submodule "packages/rxandroidble"]
+	path = packages/rxandroidble
+	url = https://github.com/Harborn-digital/RxAndroidBle
