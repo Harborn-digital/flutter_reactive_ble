@@ -1,7 +1,3 @@
 rootProject.name = 'flutter_reactive_ble'
 
-sourceControl {
-    gitRepository("https://github.com/Harborn-digital/RxAndroidBle.git") {
-        producesModule("com.polidea.rxandroidble2:rxandroidble")
-    }
-}
+includeBuild 'rxandroidble'
