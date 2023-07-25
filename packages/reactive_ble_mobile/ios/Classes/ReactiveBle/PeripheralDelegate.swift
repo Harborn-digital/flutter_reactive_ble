@@ -49,10 +49,10 @@ final class PeripheralDelegate: NSObject, CBPeripheralDelegate {
     }
 
     func peripheral(_ peripheral: CBPeripheral, didDiscoverIncludedServicesFor service: CBService, error: Error?) {
-        print('didDiscoverIncludedServicesFor - service \(service), error: \(error)')
+        print("didDiscoverIncludedServicesFor - service \(service), error: \(error)")
     }
 
     func peripheral(_ peripheral: CBPeripheral, didModifyServices invalidatedServices: [CBService]) {
-        print('didModifyServices - invalidatedServices \(invalidatedServices)')
+        print("didModifyServices - invalidatedServices \(invalidatedServices)")
     }
 }
