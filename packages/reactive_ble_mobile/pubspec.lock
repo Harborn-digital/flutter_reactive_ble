@@ -382,9 +382,11 @@ packages:
   reactive_ble_platform_interface:
     dependency: "direct main"
     description:
-      path: "../reactive_ble_platform_interface"
-      relative: true
-    source: path
+      path: "packages/reactive_ble_platform_interface"
+      ref: sander
+      resolved-ref: e0724388c329e8f13d870ab6d57e2fc4fc82ce54
+      url: "https://github.com/Harborn-digital/flutter_reactive_ble.git"
+    source: git
     version: "5.1.1"
   shelf:
     dependency: transitive

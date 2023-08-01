@@ -406,16 +406,18 @@ packages:
   reactive_ble_mobile:
     dependency: "direct main"
     description:
-      path: "../reactive_ble_mobile"
-      relative: true
-    source: path
+      name: reactive_ble_mobile
+      sha256: "2fdd8bcd00533f3e1e544030edeba723ce2dfdd24c3b22a04103b410b1272290"
+      url: "https://pub.dev"
+    source: hosted
     version: "5.1.1"
   reactive_ble_platform_interface:
     dependency: "direct main"
     description:
-      path: "../reactive_ble_platform_interface"
-      relative: true
-    source: path
+      name: reactive_ble_platform_interface
+      sha256: d0c0041de584df5c697d276ae8c3ddc767b2c364ed29b4ae25126c57e4467cba
+      url: "https://pub.dev"
+    source: hosted
     version: "5.1.1"
   shelf:
     dependency: transitive
